@@ -1,0 +1,20 @@
+ products = [
+        {
+            'product_title': 'Nirma Powder',
+            'product_desc': 'Washing Powder Nirma',
+            'product_price': '999',
+            'date_posted': '20-Aug-2019'
+        },
+        {
+            'product_title': 'LifeBoy Soap',
+            'product_desc': 'A Bunty tera saboon slow hai kya?',
+            'product_price': '50',
+            'date_posted': '15-June-2020'
+        },
+        {
+            'product_title': 'Msi GS63',
+            'product_desc': 'Gaming Laptop,Dragon Power',
+            'product_price': '96000',
+            'date_posted': '05-July-2020'
+        },
+    ]

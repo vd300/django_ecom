@@ -1,0 +1,17 @@
+{% extends 'ecom_test/base.html' %}
+{%  block content %}
+    {% if user.is_authenticated %}
+        <p>You are logged in as {{ user.username  }}</p>
+    {% else %}
+        <p> Welcome Guest </p>
+    {% endif %}
+    <h1>Content to Display</h1>
+    {% for product in products %}
+    <h2><a class="article-title" href="{% url 'product-detail' product.id %}" >{{ product.product_title }}</a></h2>
+        <img src="{{ product.product_image.url }}">
+        <p>{{ product.product_desc }}</p>
+        <h3>{{ product.product_price }}</h3>
+        <hr>
+    {% endfor %}
+
+{% endblock %}
